@@ -11,7 +11,7 @@
     </div>
     <div class="relative">
       <div class="absolute inset-0 w-screen h-screen bg-white p-8 transition-all ease-in-out duration-1000 transform translate-x-0 slide">
-        <div class="flex flex-col w-full items-center text-5xl py-2">
+        <div class="flex flex-col w-full items-center text-center text-5xl py-2">
           <NuxtLink 
             v-for="link in links"
             :key="link.value"
@@ -50,7 +50,7 @@
           v-for="link in linkGroups[activeGroupIndex].links"
           :key="link.value"
           :to="link.value"
-          class="p-6"
+          class="p-6 text-center"
         >
           {{ link.title }}
         </NuxtLink>
