@@ -10,7 +10,7 @@
       </button>
     </div>
     <div class="relative">
-      <div class="absolute inset-0 w-screen h-screen bg-white p-8 transition-all ease-in-out duration-1000 transform translate-x-0 slide">
+      <div class="absolute inset-0 w-full h-full bg-white p-8 transition-all ease-in-out duration-1000 transform translate-x-0 slide">
         <div class="flex flex-col w-full items-center text-center text-5xl py-2">
           <NuxtLink 
             v-for="link in links"

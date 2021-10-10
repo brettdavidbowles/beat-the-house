@@ -53,6 +53,7 @@
 <script>
 
 export default {
+  emits: [ 'fullPageNav' ],
   data() {
     return {
       links: [
@@ -103,6 +104,7 @@ export default {
     },
     toggleFullPageNav() {
       this.showFullPageNav = !this.showFullPageNav
+      this.$emit('fullPageNav')
     }
   }
 }
