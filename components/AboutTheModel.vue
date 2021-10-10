@@ -1,6 +1,6 @@
 <template>
   <div>
-    <div class="p-4">
+    <div class="p-8">
       <h1 class="text-4xl text-center">
         About the Model
       </h1>
