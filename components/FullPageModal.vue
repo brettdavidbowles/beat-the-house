@@ -1,7 +1,7 @@
 <template>
   <div class="flex flex-col">
     <div class="flex justify-between p-8">
-      <h1 class="text-3xl px-3">Beat the House with AI</h1>
+      <h1 class="text-3xl py-2 px-3">Beat the House with AI</h1>
       <button 
         class="text-3xl"
         @click="close"
