@@ -2,6 +2,7 @@
   <div class="h-screen">
     <Header
       @fullPageNav="toggleFullPageNav"
+      class="sticky top-0"
     />
     <Home
       v-if="!showNav"

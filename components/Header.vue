@@ -1,7 +1,7 @@
 <template>
   <div>
     <div 
-      class="flex items-center justify-between bg-black text-white sticky p-8"
+      class="flex w-full items-center justify-between bg-black text-white sticky px-8 py-2"
       v-if="!showFullPageNav"
     >
       <h1 class="text-3xl px-3">Beat the House with AI</h1>
@@ -19,27 +19,6 @@
           width="20"
         />
       </button>
-      <!-- <div 
-      class="flex items-center"
-      v-if="mediumScreenBreakPoint"
-      >
-        <div v-for="link in links" :key="link.value">
-          <div class="px-2">
-            <NuxtLink :to="link.value">{{ link.title }}</NuxtLink>
-          </div>
-        </div>
-        <div v-for="dropdownLink in dropdownLinks" :key="dropdownLink.category">
-          <Dropdown
-          :title="dropdownLink.category"
-          :links="dropdownLink.links"
-          class="px-2"/>
-        </div>
-        <NuxtLink 
-          to="/contact"
-          class="py-3 px-5 bg-white text-black">
-          Contact Us
-        </NuxtLink>
-      </div> -->
     </div>
   <FullPageModal
     v-else

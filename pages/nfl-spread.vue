@@ -1,12 +1,9 @@
 <template>
   <div>
-    <div class="bg-black p-16 absolute w-full" />
-    <div class="p-4 relative" />
     <Header
-      class="sticky top-0"
       @fullPageNav="toggleFullPageNav"
     />
-    <AboutTheModel
+    <NflSpread
     v-if="!showNav"
     />
   </div>
