@@ -1,5 +1,7 @@
 <template>
-  <PageTemplate>
+  <PageTemplate
+    class="bg-black"
+  >
     <Home />
   </PageTemplate>
 </template>

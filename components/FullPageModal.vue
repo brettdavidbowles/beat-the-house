@@ -44,7 +44,7 @@
         </div>
       </div>
       <div 
-      class="absolute inset-0 w-screen h-screen bg-white flex flex-col items-center text-5xl transition-all ease-in-out duration-1000 transform translate-x-full slide my-16">
+      class="absolute inset-0 w-screen h-screen bg-white flex flex-col items-center overflow-x-hidden text-5xl transition-all ease-in-out duration-1000 transform translate-x-full slide my-16">
         <button
           @click="previousSlide"
           class="p-4 flex items-center text-gray-400"

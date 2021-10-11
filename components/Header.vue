@@ -4,7 +4,12 @@
       class="flex w-full items-center justify-between bg-black text-white sticky px-8 py-2.5"
       v-if="!showFullPageNav"
     >
-      <h1 class="text-3xl px-3">Beat the House with AI</h1>
+      <h1 
+        class="text-3xl px-3"
+        
+      >
+        Beat the House with AI
+      </h1>
       <NavBar 
         v-if="mediumScreenBreakPoint"
         :links="links"
