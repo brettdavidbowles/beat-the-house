@@ -9,11 +9,13 @@
       class="p-4 relative"
     />
     <Header
-      class="sticky top-0"
+      class="sticky top-0 overflow-hidden"
       @fullPageNav="toggleFullPageNav"
     />
-    <div class="py-8">
-      <slot v-if="!showNav"></slot>
+    <div 
+      class="py-8" 
+    >
+      <slot></slot>
     </div>
   </div>
 </template>

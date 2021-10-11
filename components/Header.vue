@@ -20,12 +20,13 @@
         />
       </button>
     </div>
-  <FullPageModal
-    v-else
-    :links="links"
-    :linkGroups="dropdownLinks"
-    @close="toggleFullPageNav"
-  />
+        <FullPageModal
+          v-if="showFullPageNav"
+          class="w-full h-full fixed z-10 left-0 top-0"
+          :links="links"
+          :linkGroups="dropdownLinks"
+          @close="toggleFullPageNav"
+        />
   </div>
 </template>
 

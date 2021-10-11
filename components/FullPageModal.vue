@@ -1,6 +1,9 @@
 <template>
-  <div class="flex flex-col">
-    <div class="flex justify-between p-8">
+  <div class="flex flex-col bg-white">
+    <div 
+      class="flex justify-between px-8"
+      :class="headingPadding"  
+    >
       <h1 class="text-3xl py-2 px-3">Beat the House with AI</h1>
       <button 
         class="text-3xl"
@@ -10,7 +13,7 @@
       </button>
     </div>
     <div class="relative">
-      <div class="absolute inset-0 w-full bg-white py-8 transition-all ease-in-out duration-1000 transform translate-x-0 slide">
+      <div class="absolute inset-0 w-full h-full bg-white py-8 transition-all ease-in-out duration-1000 transform translate-x-0 slide">
         <div class="flex flex-col w-full items-center text-center text-5xl py-2">
           <NuxtLink 
             v-for="link in links"
@@ -41,7 +44,7 @@
         </div>
       </div>
       <div 
-      class="absolute inset-0 w-screen h-screen bg-white flex flex-col items-center text-5xl transition-all ease-in-out duration-1000 transform translate-x-full slide my-20">
+      class="absolute inset-0 w-screen h-screen bg-white flex flex-col items-center text-5xl transition-all ease-in-out duration-1000 transform translate-x-full slide my-16">
         <button
           @click="previousSlide"
           class="p-4 flex items-center text-gray-400"
@@ -80,6 +83,14 @@ export default {
   data() {
     return {
       activeGroupIndex: 0
+    }
+  },
+  computed: {
+    topOfPage() {
+      return window.scrollY===0
+    },
+    headingPadding() {
+      return this.topOfPage ? 'py-8' : 'py-0'
     }
   },
   methods: {
