@@ -6,7 +6,7 @@
       class="sticky top-0"
       @fullPageNav="toggleFullPageNav"
     />
-    <Home
+    <NflRbStats
       v-if="!showNav"
       class="py-12"
     />

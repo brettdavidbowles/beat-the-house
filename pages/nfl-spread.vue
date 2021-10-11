@@ -1,10 +1,14 @@
 <template>
   <div>
+    <div class="bg-black p-16 absolute w-full" />
+    <div class="p-4 relative" />
     <Header
+      class="sticky top-0"
       @fullPageNav="toggleFullPageNav"
     />
     <NflSpread
-    v-if="!showNav"
+      v-if="!showNav"
+      class="py-12"
     />
   </div>
 </template>
